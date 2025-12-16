@@ -18,5 +18,4 @@ jobs:
       - name: ✅ Reporte final
         run: echo "Todo parece estar en orden. Prueba finalizada."
 
-        - name: 💣 Simulando un error crítico
-        run: exit 1
+        
