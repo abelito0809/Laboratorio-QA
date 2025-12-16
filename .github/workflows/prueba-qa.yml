@@ -1,0 +1,19 @@
+name: Mi Primer Pipeline QA 🚀
+
+on: [push] # Se ejecuta cada vez que guardas un cambio
+
+jobs:
+  verificacion-rapida:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Descargando código
+        uses: actions/checkout@v4
+
+      - name: 📢 Mensaje del sistema
+        run: echo "¡Hola! Soy tu asistente automático reportandose."
+
+      - name: 🕵️ Verificando archivos
+        run: ls -la
+
+      - name: ✅ Reporte final
+        run: echo "Todo parece estar en orden. Prueba finalizada."
